@@ -2,22 +2,24 @@ package teste_curso_game;
 
 public class Game {
 	public static void main(String[] args) {
-		// System.out.println("Hello World!");
 		
-		// while ...
-		/*
-		int contador = 0;
 		
-		while(contador <= 10) {
-			System.out.println("O contador esta no while: " + contador);
-			contador++;
+		Player player = new Player();
+		
+		player.perderVida(2);
+		System.out.println(player.vida);
+		// Player tinha 10 ficou com 8...
+		
+		
+		player.ganharVida(4);
+		System.out.println("Vida antes da condicao: " + player.vida);
+		
+		if(player.vida > 10) {
+			player.vida = 10;
 		}
-		*/
+		System.out.println(player.vida);
+		// Player tinha 8 agora fica com 12
 		
-		// for ...
-		int contador = 10;
-		for(int i = 0; i < contador; i++) {
-			System.out.println("O contador esta no for: " + i);
-		}
+		
 	}
 }
