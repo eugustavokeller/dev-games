@@ -6,20 +6,26 @@ public class Game {
 		
 		Player player = new Player();
 		
-		player.perderVida(2);
-		System.out.println(player.vida);
-		// Player tinha 10 ficou com 8...
+		ElfInimigo elf = new ElfInimigo(10);
 		
+		elf.tomarDano();
 		
-		player.ganharVida(4);
-		System.out.println("Vida antes da condicao: " + player.vida);
+		System.out.println(elf.getVida());
 		
-		if(player.vida > 10) {
-			player.vida = 10;
-		}
-		System.out.println(player.vida);
-		// Player tinha 8 agora fica com 12
-		
+//		player.perderVida(2);
+//		System.out.println(player.vida);
+//		// Player tinha 10 ficou com 8...
+//		
+//		
+//		player.ganharVida(4);
+//		System.out.println("Vida antes da condicao: " + player.vida);
+//		
+//		if(player.vida > 10) {
+//			player.vida = 10;
+//		}
+//		System.out.println(player.vida);
+//		// Player tinha 8 agora fica com 12
+//		
 		
 	}
 }
